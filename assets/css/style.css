@@ -1,0 +1,24 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    position:relative;
+}
+
+body {
+    background-image: url("../images/blkdiamond.jpg");
+    background-repeat: repeat;
+    background-size: 50%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: xx-large;
+}
+
+nav {
+    width: 100%;
+    background: rgb(44, 28, 187);
+}
+
+main {
+    margin: 5%;
+    background-image: linear-gradient(to top, rgba(255,0,0,0), rgb(28, 187, 174))
+}

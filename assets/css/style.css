@@ -1,24 +1,79 @@
+/* ----CSS Reset Styles---- */
+
 * {
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
-    position:relative;
 }
+
+/* ----General Styles---- */
+
+a {
+    color: rgb(rgb(218, 218, 218));
+}
+
+a:visited {
+     color: rgb(218, 218, 218));
+ }
 
 body {
     background-image: url("../images/blkdiamond.jpg");
     background-repeat: repeat;
-    background-size: 50%;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: xx-large;
+    background-size: 25%;
+    font-family: 'Poppins', sans-serif;
+    color:rgb(255, 255, 255)
 }
 
-nav {
+.maxwidth {
+    max-width: 1300px;
+    margin: auto;
+    padding: 0px 0px;
+}
+
+
+/* ----Navigation Styles---- */
+
+.headline {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    color: rgb(28, 145, 135);
+}
+
+.navigation {
     width: 100%;
-    background: rgb(44, 28, 187);
+    z-index: 999;
+    background:  rgb(28, 145, 135);
+    position: fixed;
 }
 
-main {
-    margin: 5%;
-    background-image: linear-gradient(to top, rgba(255,0,0,0), rgb(28, 187, 174))
+.navigation .links li {
+    list-style: none;
+    display: inline-block;
+}
+
+.navigation .links li a {
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+}
+
+.navigation .maxwidth {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* ----Body Styles---- */
+
+section {
+    padding: 2%;
+    background-image: linear-gradient(to top, rgba(146, 146, 146, 0.5), rgb(16, 94, 87))
+}
+
+/* ----Footer Styles----*/
+
+footer {
+    text-align: center;
 }

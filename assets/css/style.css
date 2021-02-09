@@ -6,158 +6,122 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-}
-
-/* ----General Styles---- */
-
-a {
-    color: #DEF2F1;
-}
-
-a:visited {
-     color: #DEF2F1;
-}
-
-body {
-    background-color: #FEFFFF;
     font-family: 'Poppins', sans-serif;
-    color: #17252A;
-}
-
-.maxwidth {
-    max-width: 1300px;
-    margin: auto;
-    padding: 0px 0px;
-}
-
-hr {
-    color:#FEFFFF;
-    background-color: #2B7A78;
-    height: 1px;
-    border-width: 0px;
-    margin: 0px;
-    width: 75%;
-}
-
-h1 {
-    font-size: 50px;
-    color: #FEFFFF;
-}
-
-h2 {
-    font-size: 30px;
-    color: #2B7A78;
-    font-weight: 500;
 }
 
 /* ----Navigation Styles---- */
 
-.navigation {
-    width: 100%;
-    background-color: #2B7A78;
+nav {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2B7A78;
+    min-height: 10vh;
+    font-size: 20px;
+    color: #DEF2F1;
+    text-transform: uppercase;
+    padding: 0px 10px;
 }
 
 .links {
-    justify-content: right;
+    color: #DEF2F1;
+    font-size: 14px;
+    letter-spacing: 2px;
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
 }
 
-.navigation .links li {
-    display: inline-block;
+.links a {
+    color: #DEF2F1;
 }
 
-.navigation .links li a {
-    display: block;
-    color: #FFF;
-    font-size: 18px;
-    font-weight: 500;
-    margin-left: 20px;
-    padding: 10px;
-}
-
-.navigation .links li a:hover {
-    color: #FEFFFF;
-    background-color: #3AAFA9;
-    border-radius: 10px;
-    transition: 0.3s;
-}
-
-.menubtn {
-    cursor: pointer;
-    font-size: 25px;
-    color:#FEFFFF;
-    line-height: 80px;
-    margin-right: 20px;
+.icon {
     display: none;
 }
 
-#check {
-    display: none;
+.icon div {
+    width: 20px;
+    height: 2px;
+    margin: 5px;
+    background-color: #DEF2F1;
 }
 
-/* ----Name and Portfolio Styles---- */
+/* ----Content Styles---- */
 
-.headline {
-    padding: 5px;
-    font-family: 'Poppins', sans-serif;
-    color: #FFF;
-    justify-content:flex-start;
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
-
-.name {
-    justify-content: flex-start;
-}
-
-/* ----Body Styles---- */
 
 section {
-    display: flex;
+    width: 95%;
+    line-height: 25px;
+    Margin: 5px;
+    padding: 5px;
 }
 
-/* ----Footer Styles----*/
+section h2 {
+    font-size: 18px;
+    color: #3AAFA9;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+.contact {
+    color: #DEF2F1;
+    font-size: 14px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 5px;
+}
+
+.contact a {
+    color: #17252A;
+    padding: 5px;
+}
+
+.contact a:hover {
+    color: #DEF2F1;
+    background-color: #2B7A78;
+    transition: ease 0.3s;
+}
 
 footer {
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
+/* -----Media Queries---- */
 
-/* ----Media Queries---- */
-
-@media (max-width: 858px){
-    .menubtn{
-      display: block;
-    }
-    
+@media screen and (max-width:800px) {
     .links {
-      position: fixed;
-      width: 100%;
-      height: 100vh;
-      background: #3AAFA9;
-      top: 80px;
-      left: -100%;
-      text-align: center;
-      transition: all .5s;
-      display: block;
-    }
-
-    .navigation .links li {
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
-      }
-      
-    .navigation .links li a {
-        font-size: 20px;
-      }
-     
-    .navigation .links li a:hover,a.active {
+        position: absolute;
+        right: 0px;
+        height: 90vh;
+        width: 20%;
+        top: 10vh;
         background-color: #2B7A78;
-        color: #DEF2F1;
-      }
-    
-    #check:checked ~ .links {
-        left: 0;
-      }
-  }
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+    body {
+        overflow-x: hidden;
+    }
+    .links li {
+        opacity: 1;
+    }
+    .icon {
+        display: block;
+    }
+    .icon-active {
+        transform: translateX(0%);
+    }
+}

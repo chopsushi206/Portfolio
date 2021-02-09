@@ -36,6 +36,11 @@ nav {
     color: #DEF2F1;
 }
 
+.links a:hover {
+    font-weight: 600;
+    transition: ease 0.3s;
+}
+
 .icon {
     display: none;
 }
@@ -47,6 +52,10 @@ nav {
     background-color: #DEF2F1;
 }
 
+span {
+    text-shadow: 3px 2px 2px #17252A;
+}
+
 /* ----Content Styles---- */
 
 .content {
@@ -54,6 +63,7 @@ nav {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: 30px;
 }
 
 section {
@@ -76,6 +86,7 @@ section h2 {
     display: flex;
     width: 100%;
     justify-content: space-around;
+    flex-wrap: wrap;
     margin-top: 5px;
 }
 
@@ -93,11 +104,12 @@ section h2 {
 footer {
     display: flex;
     justify-content: center;
+    margin-top: 30px;
 }
 
 /* -----Media Queries---- */
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:650px) {
     .links {
         position: absolute;
         right: 0px;

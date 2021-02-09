@@ -70,7 +70,8 @@ section {
     width: 95%;
     line-height: 25px;
     Margin: 5px;
-    padding: 5px;
+    padding: 10px;
+    background-color: #DEF2F1;
 }
 
 section h2 {
@@ -78,7 +79,14 @@ section h2 {
     color: #3AAFA9;
     font-weight: 600;
     letter-spacing: 3px;
+}
+
+hr {
+    background-color: #FEFFFF;
+    border-color: #FEFFFF;
+    width: 95%;
     margin-bottom: 10px;
+
 }
 
 .devphoto {

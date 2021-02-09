@@ -78,6 +78,17 @@ section h2 {
     color: #3AAFA9;
     font-weight: 600;
     letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.devphoto {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    max-width: 150px;
+    float: left;
 }
 
 .contact {
@@ -113,12 +124,13 @@ footer {
     .links {
         position: absolute;
         right: 0px;
-        height: 90vh;
-        width: 20%;
+        height: 7vh;
+        width: 100%;
         top: 10vh;
         background-color: #2B7A78;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
         align-items: center;
         justify-content: space-around;
         transform: translateX(100%);
@@ -127,13 +139,17 @@ footer {
     body {
         overflow-x: hidden;
     }
+    .devphoto {
+        width: 25%;
+    }    
+    
     .links li {
-        opacity: 1;
+            opacity: 1;
+        }
+        .icon {
+            display: block;
+        }
+        .icon-active {
+            transform: translateX(0%);
+        }
     }
-    .icon {
-        display: block;
-    }
-    .icon-active {
-        transform: translateX(0%);
-    }
-}

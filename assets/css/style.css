@@ -153,11 +153,20 @@ footer {
     transform: scale(1.05);
 }
 
+.card:hover img{
+    filter: none;
+}
+
 .card:first-of-type {
     width: 40%;
     margin-left: 30%;
     margin-right: 30%;
     justify-content: center;
+}
+
+.cardimg img {
+    width: 100%;
+    filter: grayscale(100%);
 }
 
 .cardtitle {
@@ -195,7 +204,7 @@ footer {
         width: 30%;
     }
     .card:first-of-type {
-        width: 50%;       
+        width: 50%;
         margin-left: 25%;
         margin-right: 25%;
         justify-content: center;

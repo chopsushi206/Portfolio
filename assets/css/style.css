@@ -86,7 +86,13 @@ hr {
     border-color: #FEFFFF;
     width: 95%;
     margin-bottom: 10px;
+}
 
+.aboutbox {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
 }
 
 .devphoto {
@@ -96,7 +102,7 @@ hr {
     margin-right: 5px;
     margin-bottom: 5px;
     max-width: 150px;
-    float: left;
+    max-height: 150px;
 }
 
 .contact {
@@ -149,15 +155,15 @@ footer {
     }
     .devphoto {
         width: 25%;
-    }    
-    
-    .links li {
-            opacity: 1;
-        }
-        .icon {
-            display: block;
-        }
-        .icon-active {
-            transform: translateX(0%);
-        }
+        height: 25%;
     }
+    .links li {
+        opacity: 1;
+    }
+    .icon {
+        display: block;
+    }
+    .icon-active {
+        transform: translateX(0%);
+    }
+}

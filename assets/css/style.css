@@ -132,9 +132,77 @@ footer {
     margin-top: 30px;
 }
 
+/* ----CSS for Cards---- */
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card {
+    width: 20%;
+    background-color: #FEFFFF;
+    border: 1px solid #17252A;
+    margin-bottom: 5%;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card:first-of-type {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    justify-content: center;
+}
+
+.cardtitle {
+    text-align: center;
+    background-image: linear-gradient(to right, #3AAFA9, #2B7A78);
+    color: #DEF2F1;
+}
+
+.cardcont {
+    padding: 20px;
+    text-align: center;
+    line-height: 15px;
+    font-size: 10px;
+}
+
+.cardbtn {
+    display: block;
+    text-align: center;
+    background-image: linear-gradient(to right, #3AAFA9, #2B7A78);
+}
+
+.cardbtn a {
+    color: #DEF2F1;
+}
+
+.cardbtn a:hover {
+    background-image: linear-gradient(to right, #2B7A78, #3AAFA9);
+    transition: 0.3s;
+}
+
 /* -----Media Queries---- */
 
-@media screen and (max-width:650px) {
+@media screen and (max-width: 1000px) {
+    .card {
+        width: 40%;
+    }
+    .card:first-of-type {
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 650px) {
     .links {
         position: absolute;
         right: 0px;
@@ -165,5 +233,17 @@ footer {
     }
     .icon-active {
         transform: translateX(0%);
+    }
+    .row {
+        justify-content: center;
+    }
+    .card {
+        width: 75%;
+    }
+    .card:first-of-type {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        justify-content: center;
     }
 }

@@ -19,7 +19,7 @@ Made sure all Navigation links were working and pointed to the separate section 
 
 Wrote the content for each section, and added a Photo of myself in the about section. This image was styled in CSS to resize with the screen resolution as well. Made sure to include very short ALT tag with Photo. Also added links to the contact section, and styled these in CSS when hovered over. Each link opens in a new window.
 
-Created CSS cards to contain information of each new App within the projects section. Addresed the issue of making the first proect bigger by using CSS styling .card:first-of-kind. These cards were also styled within CSS to be responsive and resize with resolution size. Added an additional breakpoint to the media queries at this time to maintain an attractive ratio aspect. 
+Created CSS cards to contain information of each new App within the projects section. Addressed the issue of making the first project bigger by using CSS styling .card:first-of-kind. These cards were also styled within CSS to be responsive and resize with resolution size. Added an additional breakpoint to the media queries at this time to maintain an attractive ratio aspect. 
 
 Added project images to each card and styled them within CSS to be responsive on hover. Also added links to these images to link to project on cick. Also added a hover status to each card, so card size is increased when hovered over, increasing focus. The information for the first App we completed was added, and place holder and images was added to projects below until they can be updated with new content.
 

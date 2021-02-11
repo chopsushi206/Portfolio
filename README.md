@@ -37,7 +37,7 @@ Below are screenshots of the App.
 
 ![Top of Breakpoint Screenshot](readmeimg/breakpoint1.jpg)
 
-![Lower of Breakpoint Screenshot](readmeimg/breakpoint1.jpg)
+![Lower of Breakpoint Screenshot](readmeimg/breakpoint2.jpg)
 
 ---
 
